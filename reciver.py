@@ -45,6 +45,7 @@ input("press \033[01;92m[enter]\033[00m "
 "to continue downloading media files...")
 
 # since all the image files will going to be stored in images directory.
+os.mkdir('images')
 os.chdir('images')
 for lino, link in enumerate(mlinks):
     os.system(f"wget '{link}' -O image{lino}")
